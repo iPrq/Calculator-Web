@@ -66,9 +66,27 @@
 }
 
 #keys button:hover:not(.funbtn){
-    background:hsla(0, 0%, 20%, 0.747);
+    background-color:hsla(0, 0%, 20%, 0.747);
+    transition: background-color 0.2s;
 }
 
 .funbtn:hover{
-    background: #f099369f;
+    background-color: #f099369f;
+    transition: background-color 0.2s;
+}
+
+#historybtn{
+    background-color: #000;
+    border: 1px solid white;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#historybtn:hover{
+    background-color: white;
+    transition: background-color 0.2s ease;
+    color:#000;
+    transition: color 0.5;
 }

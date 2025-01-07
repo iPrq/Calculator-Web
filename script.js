@@ -1,5 +1,6 @@
 const inputdisplay = document.getElementById("inputdisplay");
 const outputdisplay = document.getElementById("outputdisplay");
+
 let addpressed = false;
 let number1, functiontype;
 function onInputKey(input) {
@@ -56,7 +57,6 @@ function calculate() {
     let value = inputdisplay.value;
     let a = number1;
     let b = value.substring(value.indexOf(functiontype)+1)
-    console.log(b);
     if(addpressed) {
         switch(functiontype) {
             case "+":
@@ -73,7 +73,6 @@ function calculate() {
                 div(a,b);
                 break;
             default:
-                console.log("Not added")
                 break;
         }
     }
@@ -94,3 +93,6 @@ function div(a,b){
     outputdisplay.value = Number(a)/Number(b);
 }
 
+function openHistory() {
+    window.open("history.html");
+} 
