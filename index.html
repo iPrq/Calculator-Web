@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="calculator">
+        <input id="inputdisplay" readonly>
+        <br>
+        <input id="outputdisplay" readonly>
+        <div id="keys">
+            <button onclick="onFunctionKey(`%`)">%</button>
+            <button onclick="onFunctionKey(`square`)">^2</button>
+            <button onclick="onFunctionKey(`root`)">root</button>
+            <button onclick="onInputKey(`9`)">9</button>
+            <button onclick="onInputKey(`8`)">8</button>
+            <button onclick="onInputKey(`7`)">7</button>
+            <button onclick="onFunctionKey(`+`)">+</button>
+            <button onclick="onInputKey(`6`)">6</button>
+            <button onclick="onInputKey(`5`)">5</button>
+            <button onclick="onInputKey(`4`)">4</button>
+            <button onclick="onFunctionKey(`-`)">-</button>
+            <button onclick="onInputKey(`3`)">3</button>
+            <button onclick="onInputKey(`2`)">2</button>
+            <button onclick="onInputKey(`1`)">1</button>
+            <button onclick="onFunctionKey(`*`)">×</button>
+            <button onclick="onInputKey(`0`)">0</button>
+            <button onclick="onInputKey(`00`)">00</button>
+            <button onclick="calculate()">C</button>
+        </div>
+    </div>
+</body>
+</html>
