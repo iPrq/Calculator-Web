@@ -3,6 +3,7 @@ const outputdisplay = document.getElementById("outputdisplay");
 
 let addpressed = false;
 let number1, functiontype;
+let funcinput;
 function onInputKey(input) {
         if(outputdisplay.value !== "") {
             inputdisplay.value = "";
@@ -51,6 +52,7 @@ function onFunctionKey(input) {
             default:
                 break;
         }
+        funcinput = input;
     }
 }
 function calculate() {
@@ -75,6 +77,7 @@ function calculate() {
             default:
                 break;
         }
+        postCalculation(a,b,functioninput,output);
     }
 }
 
@@ -95,4 +98,25 @@ function div(a,b){
 
 function openHistory() {
     window.open("history.html");
+    gethistory();
 } 
+
+
+
+function gethistory() {
+
+}
+
+async function postCalculation(a,b,method,o) {
+    const response = await fetch('http://localhost:8080/calculator/add', {
+        method: 'POST',
+        body: JSON.stringify({number1: a, number2: b, method: method, output: o})
+    });
+    if(response.ok) {
+        console.log("Added Calculation");
+    }
+    else {
+        console.error("Failed to add response");
+    }
+    
+}
