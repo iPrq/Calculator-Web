@@ -17,7 +17,6 @@ public class AddNewCalculationService implements Command<Calculation,ResponseEnt
 
     @Override
     public ResponseEntity<CalculatorDTO> execute(Calculation input) {
-
         taskRepository.save(input);
         return ResponseEntity.status(HttpStatus.CREATED).body(new CalculatorDTO(input.getMethod(),input.getOutput()));
     }
