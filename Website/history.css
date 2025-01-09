@@ -1,0 +1,42 @@
+body {
+   background: #000;
+}
+
+*{
+    color: white;
+    font-family: Roboto;
+}
+
+header h1{
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.calculation{
+    margin: 15px;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.result{
+    color: #f09a36;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.calculation p{
+    margin-top: 0px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.full-width-hr { 
+    position: absolute;
+    width: 97vw; /* Full width of the viewport */ 
+    left: -50vw; /* Shift it to the left */ 
+    right: -50vw; /* Also shift it to the right */ }
