@@ -2,9 +2,9 @@ package com.calculator.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 
 @Entity
-@Data
 @Table(name = "calculation")
 public class Calculation {
 
@@ -25,4 +25,23 @@ public class Calculation {
     @Column(name="output")
     public Double output;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public Double getNumber1() {
+        return number1;
+    }
+
+    public Double getNumber2() {
+        return number2;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public Double getOutput() {
+        return output;
+    }
 }
