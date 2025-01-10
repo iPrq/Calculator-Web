@@ -1,1 +1,2 @@
-A Calculator with js html and css and a java backend for history (Work in Progress)
+A Calculator with js html and css and a javabackend
+Please add your own applications.property if you wish to use this 
