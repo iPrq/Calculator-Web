@@ -40,3 +40,7 @@ header h1{
     width: 97vw; /* Full width of the viewport */ 
     left: -50vw; /* Shift it to the left */ 
     right: -50vw; /* Also shift it to the right */ }
+
+#calculationtemplate{
+    display: none;
+}
